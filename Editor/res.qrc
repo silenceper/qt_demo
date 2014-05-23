@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="doc-open">images/doc-open.png</file>
+        <file alias="editor-icon">images/editor-icon.png</file>
+        <file alias="doc-save">images/doc-save.png</file>
+        <file alias="doc-new">images/doc-new.png</file>
+        <file alias="doc-exit">images/doc-exit.png</file>
+    </qresource>
+</RCC>
