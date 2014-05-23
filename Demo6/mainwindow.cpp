@@ -58,10 +58,12 @@ void MainWindow::open(){
 
 void MainWindow::open2(){
     //QColorDialog colorDialog;
-    QFileDialog::getOpenFileName(this,
+    QString path=QFileDialog::getOpenFileName(this,
                                  tr("Open File"),
                                  ".",
                                  tr("Text Files(*.txt)"));
+    qDebug()<<path;
 }
+
 
 
