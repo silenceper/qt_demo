@@ -11,6 +11,7 @@
 #include <QTextStream>
 #include <QFileInfo>
 #include <QTextEdit>
+#include <QPixmap>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -148,5 +149,11 @@ void MainWindow::exitF(){
  * @brief MainWindow::about
  */
 void MainWindow::about(){
-    QMessageBox::about(this,tr("开发者"),tr("Author:silenceper\nEmail:silenceper@gmail.com"));
+    QMessageBox about;
+    about.setWindowTitle(tr("开发者"));
+    about.setInformativeText(tr("Author:silenceper\nEmail:silenceper@gmail.com\nWebsite:silenceper.com"));
+    about.setIcon(QMessageBox::Information);
+    about.setIconPixmap(QPixmap(":images/about-avatar"));
+    about.exec();
+    //QMessageBox::about(this,tr("开发者"),tr("Author:silenceper\nEmail:silenceper@gmail.com"));
 }

@@ -5,5 +5,6 @@
         <file alias="doc-save">images/doc-save.png</file>
         <file alias="doc-new">images/doc-new.png</file>
         <file alias="doc-exit">images/doc-exit.png</file>
+        <file alias="about-avatar">images/about-avatar.png</file>
     </qresource>
 </RCC>

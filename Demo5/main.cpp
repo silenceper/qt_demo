@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
     QObject::connect(spinBox, spinBoxSignal, slider, &QSlider::setValue);
     spinBox->setValue(35);
 
-    QHBoxLayout *layout = new QHBoxLayout(&window);
+    QHBoxLayout *layout = new QHBoxLayout();
     layout->addWidget(spinBox);
     layout->addWidget(slider);
     window.setLayout(layout);

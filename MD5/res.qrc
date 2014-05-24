@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="icon-md5">images/icon-md5.png</file>
+    </qresource>
+</RCC>
