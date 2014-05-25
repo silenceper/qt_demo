@@ -11,13 +11,15 @@ MainWindow::MainWindow(QWidget *parent)
     //设置窗体
     setWindowIcon(QIcon(":images/icon-md5"));
     resize(550,230);
-    setWindowTitle("MD5加密解密");
+    setWindowTitle("MD5加密/解密");
     //不允许缩放
     Qt::WindowFlags flags = 0;
     flags |= Qt::WindowMinimizeButtonHint;
     flags |= Qt::WindowCloseButtonHint;
     flags |= Qt::MSWindowsFixedSizeDialogHint;
     setWindowFlags(flags);
+    setStatusTip(tr("作者:silenceper"));
+    statusBar();
     createGui();
 }
 MainWindow::~MainWindow()

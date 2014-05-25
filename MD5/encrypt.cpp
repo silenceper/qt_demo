@@ -38,12 +38,12 @@ Encrypt::Encrypt(QWidget *parent):QWidget(parent){
     QWidget *resultWidget=new QWidget(MainWidget);
     QHBoxLayout *resultLayout=new QHBoxLayout();
 
-    QLabel *resultLabel=new QLabel(tr("密文(32):"),resultWidget);
+    QLabel *resultLabel=new QLabel(tr("密文:"),resultWidget);
     resultLayout->addWidget(resultLabel);
 
     resultEdit=new QLineEdit(resultWidget);
+    resultEdit->setStyleSheet("height:25px;font-size:15px;");
     resultLayout->addWidget(resultEdit);
-
     resultWidget->setLayout(resultLayout);
 
     //将上面wiodget放入
@@ -60,11 +60,13 @@ void Encrypt::createMd5(){
     //获取需要加密的字符串
     QString inputText=inputEdit->toPlainText();
     if(inputText.isEmpty()){
-        QMessageBox::warning(this,tr("错误提示"),tr("请输入需要加密的内容~"));
+        QMessageBox::warning(this,tr("错误提示"),tr("请输入需要加密的内容^_^"));
         return;
     }
     QString md5=Md5Algorithm(inputText);
     resultEdit->setText(md5);
+    //resultEdit->setFocus();
+    //resultEdit->selectAll();
 }
 
 /**

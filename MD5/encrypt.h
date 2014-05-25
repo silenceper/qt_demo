@@ -12,6 +12,7 @@ class Encrypt : public QWidget
 public:
     Encrypt(QWidget *parent = 0);
     ~Encrypt();
+
 private:
     QPushButton *encryButton;
     QTextEdit *inputEdit;
