@@ -23,6 +23,7 @@ private:
     QTextEdit *resultEdit;
     QString requestUrl;
     QNetworkAccessManager qnam;
+
     QNetworkReply *reply;
     void startRequest(QString url);
 private slots:

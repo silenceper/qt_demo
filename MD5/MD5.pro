@@ -23,3 +23,5 @@ HEADERS  += mainwindow.h \
 
 RESOURCES += \
     res.qrc
+RC_ICONS = images/icon-md5.ico
+VERSION=0.1
